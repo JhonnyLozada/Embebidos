@@ -1,7 +1,7 @@
-#include "datos_entrenamiento.h"
+#include "datos_silla.h"
 // definición de matrices de CNN
 float matriz_s [60][5]; // datos válidos
-float matriz_d [90][5]; // datos de desecho
+float matriz_d [308][5]; // datos de desecho
 int col = 0; // variable de recorrido de columnas
 int fil = 0; // variable de recorrido de filas
 int col_s = 0; // variable para matriz s
@@ -46,7 +46,7 @@ void setup() {
 }
 
 void loop() {
-  for (; fil < 90; fil++) {
+  for (; fil < 308; fil++) {
     for (; fil_s < 3; fil_s++) {
 
       for (; col_s < 4; col_s++) {
